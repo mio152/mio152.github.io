@@ -4,11 +4,24 @@
   
     
     <entry>
-      <title>test</title>
-      <link href="/2023/03/08/test/"/>
-      <url>/2023/03/08/test/</url>
+      <title>test1</title>
+      <link href="/2023/03/08/test1/"/>
+      <url>/2023/03/08/test1/</url>
       
-        <content type="html"><![CDATA[<h2 id="我来试试能不能有字"><a href="#我来试试能不能有字" class="headerlink" title="我来试试能不能有字"></a>我来试试能不能有字</h2>]]></content>
+        <content type="html"><![CDATA[<h2 id="我来试试能不能有字"><a href="#我来试试能不能有字" class="headerlink" title="我来试试能不能有字"></a>我来试试能不能有字</h2><div class="note default simple"><p>default 提示块标签</p></div>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>test2</title>
+      <link href="/2023/03/08/test2/"/>
+      <url>/2023/03/08/test2/</url>
+      
+        <content type="html"><![CDATA[<h2 id="我来随便打几个字"><a href="#我来随便打几个字" class="headerlink" title="我来随便打几个字"></a>我来随便打几个字</h2><div class="note default simple"><p>default 提示块标签</p></div>]]></content>
       
       
       
