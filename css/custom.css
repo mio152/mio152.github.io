@@ -1,8 +1,106 @@
+/* 颜色 */
 :root {
-  --trans-light: rgba(255, 255, 255, 0.75);
-  --trans-dark: rgba(25, 25, 25, 0.6);
-  --border-style: 1px solid rgb(169, 169, 169);
-  --backdrop-filter: blur(15px) saturate(150%);
+  --mio-theme-op: #4259ef23;
+  --mio-card-bg-none: rgba(255, 255, 255, 0);
+  --mio-main-op-deep: var(--mio-theme-op-deep) !important;
+  --mio-gray-op: #9999992b;
+  --mio-theme-top: var(--mio-theme);
+  --mio-white: #fff;
+  --mio-white-op: rgba(255, 255, 255, 0.2);
+  --mio-black: #000;
+  --mio-black-op: rgba(0, 0, 0, 0.2);
+  --mio-none: rgba(0, 0, 0, 0);
+  --mio-gray: #999999;
+  --mio-yellow: #ffc93e;
+  --mio-orange: #e38100;
+  --mio-border-radius: 8px;
+  --mio-main: var(--mio-theme);
+  --mio-main-op: var(--mio-theme-op);
+  --mio-shadow-theme: 0 8px 12px -3px var(--mio-theme-op);
+  --mio-shadow-main: 0 8px 12px -3px var(--mio-main-op);
+  --mio-shadow-blue: 0 8px 12px -3px rgba(40, 109, 234, 0.2);
+  --mio-shadow-white: 0 8px 12px -3px rgba(255, 255, 255, 0.2);
+  --mio-shadow-black: 0 0 12px 4px rgba(0, 0, 0, 0.05);
+  --mio-shadow-yellow: 0px 38px 77px -26px rgba(255, 201, 62, 0.12);
+  --mio-shadow-red: 0 8px 12px -3px #ee7d7936;
+  --mio-shadow-green: 0 8px 12px -3px #87ee7936;
+  --mio-shadow-border: 0 8px 16px -4px #2c2d300c;
+  --mio-shadow-blackdeep: 0 2px 16px -3px rgba(0, 0, 0, 0.15);
+  --mio-logo-color: linear-gradient(215deg, #4584ff 30%, #ff7676 70%);
+  --style-border: 1px solid var(--mio-card-border);
+  --mio-blue-main: #3b70fc;
+  --style-border-hover: 1px solid var(--mio-main);
+  --style-border-dashed: 1px dashed var(--mio-theme-op);
+  --style-border-avatar: 4px solid var(--mio-background);
+  --style-border-always: 1px solid var(--mio-card-border);
+  --style-border-none: 1px solid transparent;
+  --mio-white-acrylic1: #fefeff !important;
+  --mio-white-acrylic2: #fcfdff !important;
+  --mio-black-acrylic2: #08080a !important;
+  --mio-black-acrylic1: #0b0b0e !important;
+  --mio-main-none: #b8b8b800 !important;
+}
+
+[data-theme="light"] {
+  --mio-theme-op-deep: #4259efdd;
+  --global-bg: #f7f9fe;
+  --mio-theme: #3b70fc;
+  --mio-theme-deep: #1856fb;
+  --mio-theme-op: #4259ef23;
+  --mio-blue: #3b70fc;
+  --mio-red: #d8213c;
+  --mio-pink: #ff7c7c;
+  --mio-green: #57bd6a;
+  --mio-fontcolor: #363636;
+  --mio-background: #f7f9fe;
+  --mio-reverse: #000;
+  --mio-maskbg: rgba(255, 255, 255, 0.6);
+  --mio-maskbgdeep: rgba(255, 255, 255, 0.85);
+  --mio-hovertext: var(--mio-theme);
+  --mio-ahoverbg: #f7f7fa;
+  --mio-lighttext: var(--mio-main);
+  --mio-secondtext: rgba(60, 60, 67, 0.6);
+  --mio-scrollbar: rgba(60, 60, 67, 0.4);
+  --mio-card-btn-bg: #edf0f7;
+  --mio-post-blockquote-bg: #fafcff;
+  --mio-post-tabs-bg: #f2f5f8;
+  --mio-secondbg: #f1f3f8;
+  --mio-shadow-nav: 0 5px 12px -5px rgba(102, 68, 68, 0.05);
+  --mio-card-bg: #fff;
+  --mio-shadow-lightblack: 0 5px 12px -5px rgba(102, 68, 68, 0);
+  --mio-shadow-light2black: 0 5px 12px -5px rgba(102, 68, 68, 0);
+  --mio-card-border: #e3e8f7;
+}
+
+[data-theme="dark"] {
+  --mio-theme-op-deep: #0084ffdd;
+  --global-bg: #18171d;
+  --mio-theme: #0084ff;
+  --mio-theme-deep: #0076e5;
+  --mio-theme-op: #0084ff23;
+  --mio-blue: #0084ff;
+  --mio-red: #ff3842;
+  --mio-pink: #ff7c7c;
+  --mio-green: #57bd6a;
+  --mio-fontcolor: #f7f7fa;
+  --mio-background: #18171d;
+  --mio-reverse: #fff;
+  --mio-maskbg: rgba(0, 0, 0, 0.6);
+  --mio-maskbgdeep: rgba(0, 0, 0, 0.85);
+  --mio-hovertext: #0a84ff;
+  --mio-ahoverbg: #fff;
+  --mio-lighttext: #f2b94b;
+  --mio-secondtext: #a1a2b8;
+  --mio-scrollbar: rgba(200, 200, 223, 0.4);
+  --mio-card-btn-bg: #30343f;
+  --mio-post-blockquote-bg: #000;
+  --mio-post-tabs-bg: #121212;
+  --mio-secondbg: #30343f;
+  --mio-shadow-nav: 0 5px 20px 0px rgba(28, 28, 28, 0.4);
+  --mio-card-bg: #1d1b26;
+  --mio-shadow-lightblack: 0 5px 12px -5px rgba(102, 68, 68, 0);
+  --mio-shadow-light2black: 0 5px 12px -5px rgba(102, 68, 68, 0);
+  --mio-card-border: #42444a;
 }
 
 
@@ -76,43 +174,6 @@ div#archive {
 
 [data-theme="dark"] #page-header.nav-fixed #nav {
   background: rgba(0, 0, 0, 0.8) !important;
-}
-
-
-/* 夜间模式遮罩 */
-[data-theme="dark"] #recent-posts > .recent-post-item,
-[data-theme="dark"] #aside-content .card-widget,
-[data-theme="dark"] div#post,
-[data-theme="dark"] div#archive,
-[data-theme="dark"] div#page {
-  background: var(--trans-dark);
-}
-
-
-/* 夜间模式页脚页头遮罩透明 */
-[data-theme="dark"] #footer::before {
-  background: transparent !important;
-}
-[data-theme="dark"] #page-header::before {
-  background: transparent !important;
-}
-
-/* 阅读模式 */
-.read-mode #aside-content .card-widget {
-  background: rgba(158, 204, 171, 0.5) !important;
-}
-.read-mode div#post {
-  background: rgba(158, 204, 171, 0.5) !important;
-}
-
-/* 夜间模式下的阅读模式 */
-[data-theme="dark"] .read-mode #aside-content .card-widget {
-  background: rgba(25, 25, 25, 0.9) !important;
-  color: #ffffff;
-}
-[data-theme="dark"] .read-mode div#post {
-  background: rgba(25, 25, 25, 0.9) !important;
-  color: #ffffff;
 }
 
 
